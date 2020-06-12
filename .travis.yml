@@ -42,5 +42,5 @@ before_script:
 script:
   - ros -s woo-test
   - rove woo-test.asd
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then benchmark/run-benchmark benchmark/woo/run; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then benchmark/run-benchmark benchmark/ics7_test/run; fi
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then benchmark/run-benchmark benchmark/go/run; fi
