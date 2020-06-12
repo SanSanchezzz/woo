@@ -40,7 +40,7 @@ before_script:
   - ros run -- --version
 
 script:
-  - ros -s woo
-  - rove woo.asd
+  #- ros -s woo
+  #- rove woo.asd
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then benchmark/run-benchmark benchmark/woo/run; fi
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then benchmark/run-benchmark benchmark/go/run; fi
